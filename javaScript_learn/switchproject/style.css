@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#img{
+    width: 900px;
+    height: 1000px;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  .btn{
+    padding: 40px;
+    width: 300px;
+    background-color: chartreuse;
+    font-size: 30px;
+  }

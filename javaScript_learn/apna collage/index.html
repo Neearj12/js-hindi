@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Mainipulation</title>
+</head>
+
+<body id="body">
+    <ul id="element" data="valid">
+        <li class="list-item">first</li>
+        <li class="list-item">second</li>
+        <li class="list-item">third</li>
+    </ul>
+    <div id="firstdiv" class="alldiv">first div</div>
+    <script>
+// const alldiv=document.querySelectorAll('.alldiv')
+// console.log(alldiv);
+
+    </script>
+    <!-- <div>second div</div> -->
+
+    <!-- <table>
+        <tr>
+            <td>one </td>
+            <td>two</td>
+            
+        </tr>
+        <tr>
+            <td>three</td>
+            <td>four</td>
+        
+        </tr>
+    </table> -->
+    <button id="clickbutton" onclick="alert('Namaste word')">clickme</button>
+    <script>
+        // Root node
+        // console.log(document.documentElement)
+        // console.log(document.body)
+        // console.log(document.body.childNodes)
+        // console.log(document.body.children)
+        // console.log(document.body.firstElementChild)
+        // console.log(document.body.lastElementChild)
+        // for (node of document.body.children){
+        //     console.log(node);
+        // }
+    //    const childen= Array.from( document.body.children)
+    //    console.log(childen);
+    // sibling
+    // const ultag=document.body.children[0]
+    // const firstli=ultag.children[0]
+    // const second=ultag.children[1]
+    // console.log(ultag.nextElementSibling);
+//     // table dom manipultion
+// const tabletag=document.body.children[1]
+// console.log(tabletag.rows[1].style="background-color:blue");
+// id search
+// console.log(element.style.background="red");
+// const ultag=document.getElementById("element")
+// console.log(ultag);
+// ultag.style.backgroundColor="red"
+// using class
+// const listitem=document.getElementsByClassName("list-item")
+// console.log(listitem);
+// attribute
+// const listitem=document.querySelectorAll('ul>li:first-child')
+// console.log(listitem[0].textContent);
+// console.log(alldiv);
+// console.log(element.getAttribute('data'));
+// (element.setAttribute('order','pending'));
+// console.log(element.setAttribute('order'));
+
+// creating and remove the node element
+// const newdiv=document.createElement('div')
+// const newtext=document.createTextNode('hello word')
+// body.append(newtext)
+// body.append('newdiv')
+// firstdiv.replacewith(newdiv)
+// newdiv.remove()
+// event
+// function callme(){
+//     alert("Thanks for me")
+// }
+// clickbutton.onclick=callme
+function callme(){
+    console.log(this);
+    alert("thamks for watching")
+}
+clickbutton.addEventListener('click',callme)
+// clickbutton.addEventListener('click',function(){
+//     alert("thanks")
+// })
+// clickbutton.removeEvantListener('click',callme)
+
+
+</script>
+</body>
+
+</html>

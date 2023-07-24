@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch bulb</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: black;">
+    <img src="alessandro-bianchi-_kdTyfnUFAc-unsplash.jpg" id="img" class="center" alt="">
+    <button id="toggle" class="center btn">Turn on</button>
+    <script>
+        let btn=document.getElementById('toggle')
+        let img=document.getElementById('img')
+        btn.addEventListener('click',switchbulb)
+        function switchbulb(e){
+            if(btn.textContent.includes('on')){
+                img.src="pngegg.png"
+                btn.textContent="Turn Off"
+            }
+        else{
+                img.src="alessandro-bianchi-_kdTyfnUFAc-unsplash.jpg"
+                btn.textContent="Turn on"
+            }
+
+        }
+    </script>
+</body>
+</html>
